@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omkar Munjpara</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class ="containers">
+            <nav>
+                <img src="img/omkar-logo.png" width="100px" class="logo" alt="" id='logo' >
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="headertext">
+                <p><h2>Hey, It's <span><i>Om Munjpara</i></span> here.</h2></p>
+                <p><h3>I am a <span class="auto-type"></span> </h3></p>
+                <br>
+                <button type="submit">Download C.V</button>
+            </div>
+        </div>
+
+    </header>
+    <!-----------About-------------->
+    <section id="about">
+        <div class="container">
+            <h1 class="subtitle">About Me</h1>
+            <div class="row">
+                <div class="aboutcol1">
+                    <img src="img/Omkar.JPG" >
+                </div>
+                <div class="aboutcol2">
+                    
+                    <p id="about">Hey, I'm <i>Om Munjpara</i>. I'm pursuing my bechelor degree in Computer Engineering of Gujarat Technological University(GTU) at Gyanmanjari Institute of Technology.</p>
+                    <div class="tabtitle">
+                        <p class="tablink activelink" onclick="opentab('Skills')">Skills</p>
+                        <p class="tablink" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tabcontents activetab" id="Skills">
+                        <ul>
+                            <li><span>Python</span><br>intermediate</li>
+                            <br>
+                            <li><span>Java</span><br>Basic</li>
+                            <br>
+                            <li><span>C</span><br>intermediate</li>
+                        </ul>
+                    </div>
+                    <div class="tabcontents" id="Education">
+                        <ul>
+                            <li><span>11-12th</span><br>B.N Virani Highschool , Bhavnagar</li>
+                            <br>
+                            <li><span>B.E-Computer Engineering</span><br>Gyanmanjari institute of technology , Bhavnagar</li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!----------services--------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="subtitle">My Services</h1>
+            <div class="serviceslist">
+                <div>
+                    <h2>ProblemSolving </h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit natus voluptas qui quia ipsum voluptatum similique quae harum aut necessitatibus.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <h2>Backend Development</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit natus voluptas qui quia ipsum voluptatum similique quae harum aut necessitatibus.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <h2>Android Development</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit natus voluptas qui quia ipsum voluptatum similique quae harum aut necessitatibus.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------portfolio---------->
+    <section id="portfolio">
+        <div class="container">
+            <h1 class="subtitle">My Competitive Skills</h1>
+            <p><h3>Hackerrank profile</h3></p>
+            <img src="img/hackerrank.png" alt="" id="hacker"> 
+            
+        </div>
+
+    </section>
+    <!---------------Contact Me--------------->
+   
+ <div id="contact">
+        <div class="container">
+            <h1 class="subtitle">Contact Me</h1>
+            <div class="row1">
+                <div class="contactleft">
+                    <p><i class='bx bxl-gmail'></i>Email : omkarmunjpara@gmail.com</p>
+                    <p><i class='bx bx-phone' ></i>Phone no : +91 9574131825</p>
+                    <br>
+                    <div class="socialicon">
+                       <a href="https://github.com/Thestar47/Thestar47.git"><i class='bx bxl-github bx-tada' ></i></a> 
+                        <a href="http://"><i class='bx bxl-instagram bx-tada' ></i></a>
+                       <a href="http://"> <i class='bx bxl-linkedin bx-tada' ></i></a>
+                        
+                    </div>
+                </div>
+                <div class="contactright">
+                    <form action="">
+                        <input type="text" name="Name" placeholder="Your name" required>
+                        <input type="email" name="email" placeholder="Your email" required>
+                        <textarea name="Message" id="" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit">submit</button>
+                    </form>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        var tablink=document.getElementsByClassName("tablink");
+        var tabcontents=document.getElementsByClassName("tabcontents");
+        function opentab(tabname){
+            for(tablink of tablink){
+                tablink.classList.remove("activelink");
+            }
+            
+            for(tabcontents of tabcontents){
+                    tabcontents.classList.remove("activetab");
+            }
+            event.currentTarget.classList.add("activelink");
+            document.getElementById(tabname).classList.add("activetab");
+          
+        }
+    </script>
+    <script src="js.js"></script>
+    <script>
+        let typed = new Typed(".auto-type",{
+            strings : ["Web Devloper","Python Devloper"],
+            typeSpeed :90,
+            backSpeed:100,
+            loop:true
+        })
+    </script>
+
+   
+</body>
+</html>
