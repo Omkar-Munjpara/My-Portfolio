@@ -41,7 +41,7 @@ nav ul li a{
     border-radius: 2rem;
     outline: none;
     border: none;
-    background-color: rgb(217, 154, 27);
+    background-color: orange;
     color: white;
     font-size: 13px;
     cursor: pointer;
@@ -79,7 +79,7 @@ nav ul li a :hover::after{
     border-radius: 2rem;
     outline:none;
     border: none;
-    background-color: rgb(199, 140, 23);
+    background-color: orange;
     color: white;
     font-size: medium;
     cursor: pointer;
@@ -227,7 +227,7 @@ span{
 }
 
 .serviceslist div:hover{
-    background: rgb(217, 154, 27);
+    background: orange;
     transform: translateY(-10px);
 
 }
