@@ -30,7 +30,10 @@ nav{
     justify-content: space-between;
     flex-wrap: left ;
 }
-
+nav i{
+    position: absolute;
+    color: transparent;
+}
 nav ul li{
     display: inline-block;
     list-style: none;
@@ -349,7 +352,11 @@ nav .fa-duotone , nav .fa-regular {
         display: block;
         font-size: 25px;
     }
-
+    nav i{
+        position: relative;
+        color: orange;
+        right: 20px;
+    } 
     nav ul{
         background: orange;
         top: 0;
