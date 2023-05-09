@@ -53,6 +53,10 @@ nav ul li a{
     cursor: pointer;
 
 }
+nav i {
+    float: right;
+    visibility: hidden;
+}
 
 nav ul li a:hover{
     transition: background 2s, transform 2s;
@@ -353,6 +357,7 @@ nav .fa-duotone , nav .fa-regular {
         font-size: 25px;
     }
     nav i{
+        visibility: visible;
         position: relative;
         color: orange;
         right: 20px;
